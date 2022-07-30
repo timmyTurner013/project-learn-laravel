@@ -9,7 +9,7 @@ class Post extends Model
 {
     use HasFactory;
 
-    protected $guarded = [];
+    //protected $guarded = [];
     //protected $guarded = ['id'];
     //protected $fillable = ['title', 'excerpt', 'body'];
     public function scopeFilter($query, array $filters) {
@@ -35,6 +35,9 @@ class Post extends Model
 //                ->where('title','like','%'.request('search').'%')
 //                ->orWhere('body','like','%'.request('search').'%');
 //        }
+    }
+    public function comments() {
+        return $this->hasMany(Comment::class);
     }
     public function category() {
         return $this->belongsTo(Category::class);
