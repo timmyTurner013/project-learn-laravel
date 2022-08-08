@@ -1,10 +1,3 @@
-### My first repository is awesome!
+### Basic Blog Website based on Laravel
 
-I'm `@timmyTurner013` and here it's my first GitHub repository.
-If you see this file on my project, it's because I'm learning Git.
-
-My mood:
-
-> *bored*
-
-Thank you so much for reading! ☺
+A very basic project of a Blog Website based on Laravel. 
